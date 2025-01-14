@@ -25,7 +25,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set up Domain Controller(DC-1) within Azure using Windows Server 2022. Once it's created set the NIC private address to be static.
 - Set up Client-1 using Windows 10 and set DNS settings to DC-1's private IP address. To ensure connectivity, log into Client-1's computer and ping DC-1's private address, you should have a successful ping. 
 - Joint Client-1 to the domain. On Client-1, Navigate to __System Properties__ > __Computer name__ > __Change__ and join it to the Domain. 
-- Step 4
+- We can now create __Organizational Units(OUs)__, add __users__ and __groups__, and set up __Group Policy Objects__
 
 <h2>Deployment and Configuration Steps</h2>
 
