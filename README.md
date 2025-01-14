@@ -31,16 +31,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
   __Step 1: Set Up Domain Controller (DC-)__ 
-    1. Create a Virtual Machine:
-      -  Log in to the Azure Portal and create a new virtual machine (VM) using Windows Server 2022 as the image. 
-      -  Assign the VM a private IP address in your chosen virtual network (VNET).
-    2. Configure the NIC settings:
-      - Navigate to the Networking tab for DC-1 in the Azure portal.
-      - Select the NIc and set the private IP address to static. This ensures the IP address remains consistent for the domain controller.
-    3. Promote DC-1 to a Domain Controller:
-       - Log in to the DC-1 Vm via Remote Desktop (RDP).
-       - Open Server Manager, select Add roles and features, and install the Active Directory Domain Services role. 
-       - Promote the server to a domain controller and create a new forest.
+  1. Create a Virtual Machine:
+    *  Login to the Azure Portal and create a new virtual machine (VM) using Windows Server 2022 as the image.
+    *  Assign the VM a private IP address in your chosen virtual network (VNET).
+  2. Configure the NIC settings:
+    * Navigate to the Networking tab for DC-1 in the Azure portal.
+    * Select the NIc and set the private IP address to static. This ensures the IP address remains consistent for the domain controller.
+  3. Promote DC-1 to a Domain Controller:
+    * Log in to the DC-1 Vm via Remote Desktop (RDP).
+    * Open Server Manager, select Add roles and features, and install the Active Directory Domain Services role. 
+    *  Promote the server to a domain controller and create a new forest.
 >
 
     **screenshot server manager- installing adds role**
